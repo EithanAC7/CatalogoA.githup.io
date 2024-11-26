@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, #4B0082, #F2F2F2); /* Fondo degradado de azul morado a beige */
+    color: #fff; 
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #9B1B30; /* Granate (rojo oscuro) */
+}
+
+/* Sección hero */
+.hero {
+    text-align: center;
+    background-color: rgba(75, 0, 130, 0.8); /* Fondo azul morado oscuro */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    color: #fff; /* Texto blanco */
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #fff; /* Texto blanco */
+    font-size: 20px;
+}
+
+/* Sección de productos */
+#productos h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
+    color: #9B1B30; /* Granate (rojo oscuro) */
+}
+
+.productos-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #666;
+}
+
+.producto .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4B0082; /* Azul morado oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.producto .btn:hover {
+    background-color: #9B1B30; /* Granate (rojo oscuro) */
+}
+
+/* Sección de redes sociales */
+.redes-sociales {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 70px; /* Imagen aumentada */
+    height: 70px; /* Imagen aumentada */
+    transition: transform 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Sección de pagos QR */
+.pagos-qr {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pagos-qr img {
+    width: 250px; /* Imagen aumentada */
+    height: 250px; /* Imagen aumentada */
+}
+
+/* Pie de página */
+footer {
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
